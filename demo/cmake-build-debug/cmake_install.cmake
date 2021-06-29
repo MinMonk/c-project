@@ -1,4 +1,4 @@
-# Install script for directory: D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo
+# Install script for directory: D:/Repository/github/MinMonk/PublicRepo/c-project/demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Repository/github/MinMonk/PublicRepo/c-project/demo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

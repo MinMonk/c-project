@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo.dir/main.c.obj"
+  "CMakeFiles/demo.dir/src/strfunc.c.obj"
   "demo.exe"
   "demo.exe.manifest"
   "demo.lib"

@@ -47,10 +47,10 @@ RM = "C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo
+CMAKE_SOURCE_DIR = D:\Repository\github\MinMonk\PublicRepo\c-project\demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles\demo.dir\depend.make
@@ -63,36 +63,57 @@ include CMakeFiles\demo.dir\flags.make
 
 CMakeFiles\demo.dir\main.c.obj: CMakeFiles\demo.dir\flags.make
 CMakeFiles\demo.dir\main.c.obj: ..\main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/main.c.obj"
 	C:\develop\MICROS~1.0\VC\bin\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\demo.dir\main.c.obj /FdCMakeFiles\demo.dir\ /FS -c D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\demo.dir\main.c.obj /FdCMakeFiles\demo.dir\ /FS -c D:\Repository\github\MinMonk\PublicRepo\c-project\demo\main.c
 <<
 
 CMakeFiles\demo.dir\main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/main.c.i"
 	C:\develop\MICROS~1.0\VC\bin\cl.exe > CMakeFiles\demo.dir\main.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Repository\github\MinMonk\PublicRepo\c-project\demo\main.c
 <<
 
 CMakeFiles\demo.dir\main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/main.c.s"
 	C:\develop\MICROS~1.0\VC\bin\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\demo.dir\main.c.s /c D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\main.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\demo.dir\main.c.s /c D:\Repository\github\MinMonk\PublicRepo\c-project\demo\main.c
+<<
+
+CMakeFiles\demo.dir\src\strfunc.c.obj: CMakeFiles\demo.dir\flags.make
+CMakeFiles\demo.dir\src\strfunc.c.obj: ..\src\strfunc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/demo.dir/src/strfunc.c.obj"
+	C:\develop\MICROS~1.0\VC\bin\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\demo.dir\src\strfunc.c.obj /FdCMakeFiles\demo.dir\ /FS -c D:\Repository\github\MinMonk\PublicRepo\c-project\demo\src\strfunc.c
+<<
+
+CMakeFiles\demo.dir\src\strfunc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/src/strfunc.c.i"
+	C:\develop\MICROS~1.0\VC\bin\cl.exe > CMakeFiles\demo.dir\src\strfunc.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Repository\github\MinMonk\PublicRepo\c-project\demo\src\strfunc.c
+<<
+
+CMakeFiles\demo.dir\src\strfunc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/src/strfunc.c.s"
+	C:\develop\MICROS~1.0\VC\bin\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\demo.dir\src\strfunc.c.s /c D:\Repository\github\MinMonk\PublicRepo\c-project\demo\src\strfunc.c
 <<
 
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles\demo.dir\main.c.obj"
+"CMakeFiles\demo.dir\main.c.obj" \
+"CMakeFiles\demo.dir\src\strfunc.c.obj"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
 demo.exe: CMakeFiles\demo.dir\main.c.obj
+demo.exe: CMakeFiles\demo.dir\src\strfunc.c.obj
 demo.exe: CMakeFiles\demo.dir\build.make
 demo.exe: CMakeFiles\demo.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable demo.exe"
 	"C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\demo.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- C:\develop\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\demo.dir\objects1.rsp @<<
- /out:demo.exe /implib:demo.lib /pdb:D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\demo.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:demo.exe /implib:demo.lib /pdb:D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\demo.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -105,6 +126,6 @@ CMakeFiles\demo.dir\clean:
 .PHONY : CMakeFiles\demo.dir\clean
 
 CMakeFiles\demo.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\CMakeFiles\demo.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" D:\Repository\github\MinMonk\PublicRepo\c-project\demo D:\Repository\github\MinMonk\PublicRepo\c-project\demo D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles\demo.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\demo.dir\depend
 

@@ -20,29 +20,29 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "D:/Repository/github/MinMonk/PublicRepo/c-project/demo/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Repository/github/MinMonk/PublicRepo/c-project/demo/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_a9d14\fast && 	"C:\develop\Microsoft Visual Studio 12.0\VC\BIN\nmake.exe"  -f CMakeFiles\cmTC_a9d14.dir\build.make /nologo -L                  CMakeFiles\cmTC_a9d14.dir\build
-Building C object CMakeFiles/cmTC_a9d14.dir/testCCompiler.c.obj
-	C:\develop\MICROS~1.0\VC\bin\cl.exe @C:\Users\admin\AppData\Local\Temp\nmE100.tmp
+Run Build Command(s):nmake /nologo cmTC_47696\fast && 	"C:\develop\Microsoft Visual Studio 12.0\VC\BIN\nmake.exe"  -f CMakeFiles\cmTC_47696.dir\build.make /nologo -L                  CMakeFiles\cmTC_47696.dir\build
+Building C object CMakeFiles/cmTC_47696.dir/testCCompiler.c.obj
+	C:\develop\MICROS~1.0\VC\bin\cl.exe @C:\Users\admin\AppData\Local\Temp\nm824A.tmp
 testCCompiler.c
-Linking C executable cmTC_a9d14.exe
-	"C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a9d14.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- C:\develop\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_a9d14.dir\objects1.rsp @C:\Users\admin\AppData\Local\Temp\nmE305.tmp
+Linking C executable cmTC_47696.exe
+	"C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_47696.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- C:\develop\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_47696.dir\objects1.rsp @C:\Users\admin\AppData\Local\Temp\nm84BC.tmp
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Repository/github/MinMonk/PublicRepo/c-project/demo/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_0d775\fast && 	"C:\develop\Microsoft Visual Studio 12.0\VC\BIN\nmake.exe"  -f CMakeFiles\cmTC_0d775.dir\build.make /nologo -L                  CMakeFiles\cmTC_0d775.dir\build
-Building C object CMakeFiles/cmTC_0d775.dir/CMakeCCompilerABI.c.obj
-	C:\develop\MICROS~1.0\VC\bin\cl.exe @C:\Users\admin\AppData\Local\Temp\nmE778.tmp
+Run Build Command(s):nmake /nologo cmTC_5ed4b\fast && 	"C:\develop\Microsoft Visual Studio 12.0\VC\BIN\nmake.exe"  -f CMakeFiles\cmTC_5ed4b.dir\build.make /nologo -L                  CMakeFiles\cmTC_5ed4b.dir\build
+Building C object CMakeFiles/cmTC_5ed4b.dir/CMakeCCompilerABI.c.obj
+	C:\develop\MICROS~1.0\VC\bin\cl.exe @C:\Users\admin\AppData\Local\Temp\nm8AD5.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_0d775.exe
-	"C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_0d775.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- C:\develop\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_0d775.dir\objects1.rsp @C:\Users\admin\AppData\Local\Temp\nmE7F6.tmp
+Linking C executable cmTC_5ed4b.exe
+	"C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_5ed4b.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- C:\develop\MICROS~1.0\VC\bin\link.exe /nologo @CMakeFiles\cmTC_5ed4b.dir\objects1.rsp @C:\Users\admin\AppData\Local\Temp\nm8BA1.tmp
 
 
 

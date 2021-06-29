@@ -52,10 +52,10 @@ RM = "C:\develop\JetBrains\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo
+CMAKE_SOURCE_DIR = D:\Repository\github\MinMonk\PublicRepo\c-project\demo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,9 +84,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\CMakeFiles D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\github\MinMonk\PublicRepo\clion-workspace\demo\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Repository\github\MinMonk\PublicRepo\c-project\demo\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +154,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\demo.dir\main.c.s
 .PHONY : main.c.s
 
+src\strfunc.obj: src\strfunc.c.obj
+
+.PHONY : src\strfunc.obj
+
+# target to build an object file
+src\strfunc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\demo.dir\src\strfunc.c.obj
+.PHONY : src\strfunc.c.obj
+
+src\strfunc.i: src\strfunc.c.i
+
+.PHONY : src\strfunc.i
+
+# target to preprocess a source file
+src\strfunc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\demo.dir\src\strfunc.c.i
+.PHONY : src\strfunc.c.i
+
+src\strfunc.s: src\strfunc.c.s
+
+.PHONY : src\strfunc.s
+
+# target to generate assembly for a file
+src\strfunc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\demo.dir\src\strfunc.c.s
+.PHONY : src\strfunc.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -166,6 +193,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/strfunc.obj
+	@echo ... src/strfunc.i
+	@echo ... src/strfunc.s
 .PHONY : help
 
 

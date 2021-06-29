@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/main.c" "D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/cmake-build-debug/CMakeFiles/demo.dir/main.c.obj"
+  "D:/Repository/github/MinMonk/PublicRepo/c-project/demo/main.c" "D:/Repository/github/MinMonk/PublicRepo/c-project/demo/cmake-build-debug/CMakeFiles/demo.dir/main.c.obj"
+  "D:/Repository/github/MinMonk/PublicRepo/c-project/demo/src/strfunc.c" "D:/Repository/github/MinMonk/PublicRepo/c-project/demo/cmake-build-debug/CMakeFiles/demo.dir/src/strfunc.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 

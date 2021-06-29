@@ -1,46 +1,56 @@
 #include <stdio.h>
-#include "string.h"
+#include <string.h>
 
 int main() {
-    printf("Hello, World!\n");
-    printf("=====================\n\n");
-
-    char src[30], dest[30];
-    strcpy(src, "abcdefg");
-    strcpy(dest, "hijklmn");
-    strcat(dest, ", ");
-    strcat(dest, src);
-    strcat(dest, ", ");
-    strncat(dest, src, 3);
-    printf("%s \n", dest);
-    printf("=====strcpy====strcat=====strncat=======\n\n");
-
-    char *idx = (char *)memchr(dest, 'd', 20);
-    printf("|%c|ä¹‹åçš„å­—ç¬¦ä¸²æ˜¯ [%s]ï¼Œé•¿åº¦ä¸º%d \n", 'd', idx, strlen(idx));
-    printf("=========memchr============\n\n");
-
-    char *chr = strchr(dest, 'd');
-    printf("%s \n", chr);
-    printf("=========strchr============\n\n");
 
 
-    char *str1 = "hello";
-    char *str2 = "HELLO";
-    int res_memcmp = memcmp(str1, str2, 5);
-    int res_strncmp = strncmp(str1, str2, 3);
-    // å°å†™å­—æ¯çš„ASCIIç å¤§äºå¤§å†™å­—æ¯çš„ASCIIç 
-    printf("str1=[%d], str2=[%d], %d \n", str1, str2, res_memcmp);
-    printf("str1=[%d], str2=[%d], %d \n", str1, str2, res_strncmp);
-    printf("==========memcmp===========\n\n");
-
-    printf("Befor memmove dest = %s, src = %s\n", dest, src);
-    memmove(dest, src, 7);
-    printf("After memmove dest = %s, src = %s\n", dest, src);
-    printf("===========memmove==========\n\n");
+    /*char str2[50], str1[50];
+    strcpy(str2,  "This is source");
+    strcpy(str1, "This is destination");*/
+    // char *str1 = "This is destination";
+    // char *str2 = "This is source";
+    // strcat(str1, str2);
+    // printf("×îÖÕµÄÄ¿±ê×Ö·û´®£º |%s| \n", str1);
 
 
-    //memset()
+    char *str1 = "abcdefg";
+    char *c = ",";
+    char *str2 = "hijklmn";
 
-    //getchar();
+    printf("%X, %X, %X \n", str1, c, str2);
+    strcat(str1, c);
+    printf("%X, %X, %X \n", str1, c, str2);
+    strcat(str1, str2);
+    printf("%X, %X, %X \n", str1, c, str2);
+    printf("[%s], [%s]\n", str1, str2);
+
+    int a = 1;
+    printf("%d \n", sizeof a);
+
+    printf("=======================\n");
+    char cs1[20] = "abcdefj";
+    char cs2[20] = "hijklmn";
+    char b = ',';
+    printf("%X, %X, %X \n", cs1, b, cs2);
+    strcat(cs1, ",");
+    printf("%X, %X, %X \n", cs1, b, cs2);
+    strcat(cs1, cs2);
+    printf("%X, %X, %X \n", cs1, b, cs2);
+    printf("[%s], [%s] \n", cs1, cs2);
+
+    //char *res = strcat(str1, str2);
+    // int cmp = memcmp(str1, res, strlen(res));
+    // int scmp = strncmp(str1, res, strlen(res));
+    // printf("×îÖÕµÄÄ¿±ê×Ö·û´®£º %s, %s, %d, %d\n", str1, res, cmp, scmp);
+
+    /*hello("monk");
+    test_strcpy();
+    test_strcat("abcdef", "hijklmn");
+    test_strncat("abcdef", "hijklmn", 3);
+    test_memchr("abcdef", 'c', 3);
+    test_strchr("abcdef", 'c');
+    test_strncmp("abcdef", "hijklmn", 3);
+    test_memcmp("abcdef", "hijklmn", 3);*/
+
     return 0;
 }

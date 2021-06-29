@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/main.c
+D:/Repository/github/MinMonk/PublicRepo/c-project/demo/main.c
 stdio.h
 -
 string.h
-D:/Repository/github/MinMonk/PublicRepo/clion-workspace/demo/string.h
+-
 
